@@ -20,7 +20,7 @@ const body = document.querySelector('body');
 const themeSwitcher = document.querySelector('#theme-switch-toggle');
 body.classList.add("light-theme");
 
-themeSwitcher.addEventListener('input', onThemeSwitcherChange);
+themeSwitcher.addEventListener('change', onThemeSwitcherChange);
 
 function onThemeSwitcherChange(event) {
   const position = event.currentTarget.value;
