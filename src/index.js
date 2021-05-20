@@ -20,7 +20,7 @@ themeSwitcher.addEventListener('change', onThemeSwitcherChange);
 function onThemeSwitcherChange(event) {
   body.classList.toggle(Theme.LIGHT);
   body.classList.toggle(Theme.DARK);
-  if (body.classList.contains(Theme.DARK)) {
+  if (event.target.checked) {
     localStorage.setItem('switcher-position', (Theme.DARK));
   } else localStorage.setItem('switcher-position', (Theme.LIGHT));
 };
